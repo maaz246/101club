@@ -4,3 +4,8 @@
 #mg-custom-slideshow .slideshow {
   height: 100vh;
 }
+.navigation-wrapper {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
