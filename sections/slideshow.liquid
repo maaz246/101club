@@ -125,12 +125,24 @@
             {%- if block.settings.video != blank -%}
               {{
                 block.settings.video
-                | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true
+                | video_tag:
+                  autoplay: true,
+                  loop: true,
+                  muted: true,
+                  controls: false,
+                  playsinline: true,
+                  class: 'mg-video-tag'
               }}
             {%- elsif block.settings.video_url != blank -%}
               {{
                 block.settings.video_url
-                | external_video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true
+                | external_video_tag:
+                  autoplay: true,
+                  loop: true,
+                  muted: true,
+                  controls: false,
+                  playsinline: true,
+                  class: 'mg-video-tag'
               }}
             {%- endif -%}
           {%- elsif block.settings.image -%}
@@ -618,7 +630,7 @@
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "",
+          "default": "Heading",
           "label": "Heading"
         },
         {
@@ -635,20 +647,8 @@
           "label": "Heading size"
         },
         {
-          "type": "inline_richtext",
-          "id": "subheading",
-          "default": "",
-          "label": "Subheading"
-        },
-        {
           "type": "header",
           "content": "Button"
-        },
-        {
-          "type": "text",
-          "id": "button_label",
-          "default": "",
-          "label": "Button label"
         },
         {
           "type": "url",
