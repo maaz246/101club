@@ -17,7 +17,7 @@
           "settings": {
             "video": "shopify://files/videos/Banner-With-Logo.mp4",
             "video_url": "",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 30,
             "heading": "",
             "heading_size": "h1",
             "link": "",
