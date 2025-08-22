@@ -1,3 +1,6 @@
 .mg-video-tag {
   object-fit: cover !important;
 }
+#mg-custom-slideshow .slideshow {
+  height: 100vh;
+}
